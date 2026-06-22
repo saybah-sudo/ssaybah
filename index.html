@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nursaybah Kirani Br Sembiring — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nursaybah.css" />
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-cup">
+      <div class="loader-cup-body">
+        <div class="loader-coffee"></div>
+        <div class="loader-steam s1"></div>
+        <div class="loader-steam s2"></div>
+        <div class="loader-steam s3"></div>
+      </div>
+      <div class="loader-handle"></div>
+    </div>
+    <p class="loader-text">menyeduh portfolio<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+    <div class="loader-progress"><span id="loaderBar"></span></div>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <div class="particles" id="particles"></div>
+
+  <header class="navbar">
+    <div class="nav-mark">sssaybah</div>
+    <nav class="nav-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#perjalanan">Perjalanan</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-bg-layer"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Portfolio . 2026</p>
+      <h1 class="hero-title">
+        Nursaybah Kirani <br/>
+        <span class="hero-title-accent">Br Sembiring</span>
+      </h1>
+      <p class="hero-subtitle">
+        UI/UX Developer · Mahasiswa Informatika, Universitas Satya Terra Bhinneka
+      </p>
+      <p class="hero-tagline">
+        Belajar membangun hal-hal yang indah dari baris kode 
+        — satu langkah kecil setiap harinya, seperti kupu-kupu yang perlahan membentuk sayapnya.🦋
+      </p>
+      <div class="hero-buttons">
+        <a href="#tentang" class="btn btn-primary">Tentang Aku</a>
+        <a href="#kontak" class="btn btn-ghost">Hubungi Aku</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Tentang Saybah</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card tilt-card">
+        <div class="about-card-inner">
+          <div class="about-photo">
+            <div class="photo-frame">
+              <img src="foto-saybah.jpeg" alt="Foto Nursaybah Kirani Br Sembiring" class="photo-img" />
+            </div>
+            <div class="photo-ring"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p class="about-lead">
+          Hai! Aku <strong>Nursaybah Kirani Br Sembiring</strong>, biasa
+          dipanggil Saybah. Saat ini aku sedang menempuh semester 2 di
+          jurusan <strong>Informatika</strong>, Universitas Satya Terra
+          Bhinneka. Aku tertarik pada dunia UI/UX — karena bagiku, teknologi yang baik
+          adalah yang terasa nyaman dan indah saat digunakan.
+        </p>
+        <p>
+          Desain adalah cara aku bercerita tanpa kata-kata — lewat warna, 
+          bentuk, dan ruang kosong yang justru punya makna. Setiap elemen yang aku susun adalah
+          bagian dari cerita yang ingin aku sampaikan kepada siapa pun yang melihatnya.
+        </p>
+
+          <div class="stat-row">
+          <div class="stat-card" onclick="document.getElementById('proyek').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+
+          <div class="stat-card" onclick="document.getElementById('skill').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">
+            <span class="stat-number">10</span>
+            <span class="stat-label">Skill & Tools</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Semester Berjalan</span>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skill">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skill &amp; Tools</h2>
+    </div>
+    <p class="skills-intro">
+      Sebagai calon <strong>UI/UX Developer</strong>, aku menggabungkan
+      kemampuan desain dan teknis berikut untuk membangun produk digital
+      yang cantik sekaligus fungsional.
+    </p>
+
+    <h3 class="skill-category">🎨 Design Tools</h3>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <span class="skill-icon">🎨</span>
+        <h3>Figma</h3>
+        <p class="skill-desc">Wireframe, prototyping &amp; UI design</p>
+        <div class="skill-bar"><span style="--level:90%"></span></div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🖌️</span>
+        <h3>UI/UX Design</h3>
+        <p class="skill-desc">Riset, layout &amp; sistem desain</p>
+        <div class="skill-bar"><span style="--level:85%"></span></div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">✨</span>
+        <h3>Canva</h3>
+        <p class="skill-desc">Desain grafis &amp; konten visual</p>
+        <div class="skill-bar"><span style="--level:95%"></span></div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🧩</span>
+        <h3>Wireframing &amp; Prototyping</h3>
+        <p class="skill-desc">Rancangan alur &amp; tampilan awal produk</p>
+        <div class="skill-bar"><span style="--level:80%"></span></div>
+      </div>
+    </div>
+
+    <h3 class="skill-category">💻 Frontend Development</h3>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <span class="skill-icon">🌐</span>
+        <h3>HTML</h3>
+        <p class="skill-desc">Struktur halaman web semantik</p>
+        <div class="skill-bar"><span style="--level:80%"></span></div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🎀</span>
+        <h3>CSS</h3>
+        <p class="skill-desc">Styling, animasi &amp; layout responsif</p>
+        <div class="skill-bar"><span style="--level:75%"></span></div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">⚡</span>
+        <h3>JavaScript</h3>
+        <p class="skill-desc">Interaktivitas &amp; logika frontend</p>
+        <div class="skill-bar"><span style="--level:70%"></span></div>
+      </div>
+    </div>
+
+    <h3 class="skill-category">🧠 Programming &amp; Logic</h3>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <span class="skill-icon">☕</span>
+        <h3>Java</h3>
+        <p class="skill-desc">OOP &amp; logika pemrograman</p>
+        <div class="skill-bar"><span style="--level:60%"></span></div>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🐍</span>
+        <h3>Python</h3>
+        <p class="skill-desc">Dasar logika &amp; pemrograman</p>
+        <div class="skill-bar"><span style="--level:65%"></span></div>
+      </div>
+    </div>
+
+    <h3 class="skill-category">🗄️ Database</h3>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <span class="skill-icon">🗄️</span>
+        <h3>MySQL</h3>
+        <p class="skill-desc">Perancangan &amp; query database</p>
+        <div class="skill-bar"><span style="--level:70%"></span></div>
+      </div>
+    </div>
+
+    <h3 class="skill-category">🌸 Soft Skills</h3>
+    <div class="soft-skill-grid">
+      <div class="soft-skill-pill">
+        <span class="soft-skill-icon">👂</span>
+        <span>Teamwork</span>
+      </div>
+      <div class="soft-skill-pill">
+        <span class="soft-skill-icon">💡</span>
+        <span>Problem Solving</span>
+      </div>
+      <div class="soft-skill-pill">
+        <span class="soft-skill-icon">🎯</span>
+        <span>Attention to Detail</span>
+      </div>
+      <div class="soft-skill-pill">
+        <span class="soft-skill-icon">🦋</span>
+        <span>Curiosity</span>
+      </div>
+      <div class="soft-skill-pill">
+        <span class="soft-skill-icon">💖</span>
+        <span>Empathy</span>
+      </div>
+      <div class="soft-skill-pill">
+        <span class="soft-skill-icon">👥</span>
+        <span>Active Listening</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="proyek">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Proyek &amp; Karya</h2>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-thumb thumb-portfolio">
+          <span class="project-emoji">🤎</span>
+        </div>
+        <div class="project-body">
+          <h3>Portfolio Personal — Saybah</h3>
+          <p>
+            Website portfolio dengan tema coklat elegan, dan struktur kode yang dipisah ke HTML, CSS, dan
+            JavaScript.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI Design</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" onclick="window.open('https://orangutanhaven.byethost7.com/','_blank')" style="cursor:pointer">
+        <div class="project-thumb thumb-converter">
+          <span class="project-emoji">🦧</span>
+        </div>
+        <div class="project-body">
+          <h3>BiodataOUH — Website Konservasi Orangutan</h3>
+          <p>
+            Website sistem informasi konservasi orangutan yang dikerjakan bersama tim 
+            sebagai tugas kelompok. Menampilkan biodata orangutan dengan fitur pencarian 
+            data, halaman konservasi, dan laporan perlindungan habitat.
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI Design</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" onclick="window.open('https://www.figma.com/proto/b8J3FBAc9CPiyPvrqVFwRS/SiagaID---Project-Group-5?node-id=1-7&p=f&t=FpbtiDvPzTtbwt2b-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=397%3A390&show-proto-sidebar=1','_blank')" style="cursor:pointer">
+        <div class="project-thumb thumb-phone">
+          <span class="project-emoji">🚨</span>
+        </div>
+        <div class="project-body">
+          <h3>SiagaID — Aplikasi Layanan Darurat Terpadu</h3>
+          <p>
+            Aplikasi mobile untuk menghubungkan warga dengan layanan darurat Indonesia — 
+            Damkar (113), Ambulans (118/119), Polisi (110), dan SAR (115). 
+            Dikerjakan bersama tim sebagai tugas kelompok, mencakup desain antarmuka mobile, 
+            dashboard Super Admin, panel admin institusi, dan prototipe interaktif Figma.
+          </p>
+          <div class="project-tags">
+            <span>Mobile App</span><span>Figma</span><span>UI Design</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="journey" id="perjalanan">
+    <div class="section-head">
+      <span class="section-num">04</span>
+
+      <h2 class="section-title">Perjalanan</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2019 - 2022</span>
+          <h3>SMP Negeri 05 Satu Atap Bahorok</h3>
+          <p>
+            Selalu masuk 3 besar di kelas, aktif berorganisasi sebagai 
+            Bendahara OSIS dan Sekretaris Kelas — awal mula belajar tanggung jawab dan kepemimpinan.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2022 - 2025</span>
+          <h3>SMK Swasta Swakarya Salapian</h3>
+          <p>
+            Tiga tahun mempertahankan ranking 1, menjabat sebagai Sekretaris Kelas, dan menjalani PKL selama 3 bulan di Enter 
+            Computer Binjai — pengalaman pertama terjun langsung ke dunia teknologi.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2025 - Sekarang</span>
+          <h3>Mahasiswa Informatika, Universitas Satya Terra Bhinneka</h3>
+          <p>
+            Sedang memperdalam dasar-dasar pemrograman, struktur data, dan
+            pengembangan web — sambil terus mengeksplorasi sisi kreatif
+            lewat desain antarmuka.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">Sedang Berlangsung</span>
+          <h3>Membangun Portfolio &amp; Skill Baru</h3>
+          <p>
+            Terus belajar HTML, CSS, dan JavaScript untuk membangun
+            proyek-proyek personal — salah satunya halaman yang sedang kamu
+            lihat sekarang ini 🤎
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hobbies" id="hobi">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Hal yang Aku Sukai</h2>
+    </div>
+
+    <div class="hobby-grid">
+      <div class="hobby-card">
+        <div class="hobby-card-flip">
+          <div class="hobby-face hobby-front">
+            <span class="hobby-icon">🐱</span>
+            <h3>Cats</h3>
+          </div>
+          <div class="hobby-face hobby-back">
+            <p>
+              Jatuh berkali-kali, bangkit lebih cepat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-card-flip">
+          <div class="hobby-face hobby-front">
+            <span class="hobby-icon">🎧</span>
+            <h3>Music</h3>
+          </div>
+          <div class="hobby-face hobby-back">
+            <p>
+              Satu nada salah tidak merusak keseluruhan lagu.
+          </div>
+        </div>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-card-flip">
+          <div class="hobby-face hobby-front">
+            <span class="hobby-icon">🎮</span>
+            <h3>Gaming</h3>
+          </div>
+          <div class="hobby-face hobby-back">
+            <p>
+              Level up dalam game, skill up dalam coding.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-card-flip">
+          <div class="hobby-face hobby-front">
+            <span class="hobby-icon">🍫</span>
+            <h3>Chocolate</h3>
+          </div>
+          <div class="hobby-face hobby-back">
+            <p>
+              Dari biji sederhana jadi sesuatu yang luar biasa.
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="contact" id="kontak">
+    <div class="contact-card">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Mari Terhubung</h2>
+      <p>
+        Terima kasih sudah mengunjungi portfolio ini. Yuk, terhubung dan
+        ngobrol bareng — siapa tahu kita bisa belajar bareng juga!
+      </p>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/sssaybah_" class="contact-pill">Instagram</a>
+        <a href="mailto:saybahkirani1@gmail.com" class="contact-pill">Email</a>
+        <a href="https://wa.me/6285277646574" class="contact-pill">WhatsApp</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2026 Nursaybah Kirani Br Sembiring · Dibuat dengan penuh kesabaran &amp; begadang semalaman🌙 </p>
+    </footer>
+  </section>
+
+  <script src="nursaybah.js"></script>
+</body>
+</html>

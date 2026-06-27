@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="nursaybah.css" />
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 </head>
 <body>
 
@@ -40,6 +41,14 @@
       <a href="#hobi">Hobi</a>
       <a href="#kontak">Kontak</a>
     </nav>
+
+    <div class="nav-controls">
+        <button id="menuToggle" class="menu-toggle">
+            ☰
+        </button>
+        
+        <button class="toggle-btn" id="darkToggle">🌙</button>
+    </div>
   </header>
 
   <section class="hero" id="beranda">
@@ -265,9 +274,9 @@
         <div class="project-body">
           <h3>BiodataOUH — Website Konservasi Orangutan</h3>
           <p>
-            Website sistem informasi konservasi orangutan yang dikerjakan bersama tim 
-            sebagai tugas kelompok. Menampilkan biodata orangutan dengan fitur pencarian 
-            data, halaman konservasi, dan laporan perlindungan habitat.
+            Website sistem informasi konservasi orangutan yang dikerjakan bersama tim. 
+            Menampilkan biodata orangutan dengan fitur pencarian 
+            data, dan laporan perlindungan habitat.
           <div class="project-tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI Design</span>
           </div>
@@ -281,10 +290,9 @@
         <div class="project-body">
           <h3>SiagaID — Aplikasi Layanan Darurat Terpadu</h3>
           <p>
-            Aplikasi mobile untuk menghubungkan warga dengan layanan darurat Indonesia — 
-            Damkar (113), Ambulans (118/119), Polisi (110), dan SAR (115). 
-            Dikerjakan bersama tim sebagai tugas kelompok, mencakup desain antarmuka mobile, 
-            dashboard Super Admin, panel admin institusi, dan prototipe interaktif Figma.
+            Aplikasi mobile darurat terpadu — Damkar, Ambulans, Polisi & SAR. 
+            Dikerjakan bersama tim, mencakup UI mobile, dashboard Super Admin, 
+            dan prototipe interaktif Figma.
           </p>
           <div class="project-tags">
             <span>Mobile App</span><span>Figma</span><span>UI Design</span>
@@ -437,6 +445,9 @@
     </footer>
   </section>
 
+  
+
   <script src="nursaybah.js"></script>
+  <script src="nursaybah-vue.js"></script>
 </body>
 </html>

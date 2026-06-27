@@ -916,35 +916,46 @@ body.dark .vue-typewriter   { color: #d4b896; }
   document.head.appendChild(style);
 }
 
+/* ===========================
+   MOBILE MENU
+=========================== */
+
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
+const overlay = document.getElementById("menuOverlay");
 
-if(menuToggle){
+if (menuToggle && navLinks && overlay) {
 
-    menuToggle.addEventListener("click",()=>{
+    menuToggle.addEventListener("click", () => {
 
         navLinks.classList.toggle("show");
+        overlay.classList.toggle("show");
 
-        if(navLinks.classList.contains("show")){
-            menuToggle.innerHTML="✕";
-        }else{
-            menuToggle.innerHTML="☰";
-        }
+        menuToggle.innerHTML =
+            navLinks.classList.contains("show")
+            ? "✕"
+            : "☰";
+
+    });
+
+    overlay.addEventListener("click", () => {
+
+        navLinks.classList.remove("show");
+        overlay.classList.remove("show");
+        menuToggle.innerHTML = "☰";
+
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("show");
+            overlay.classList.remove("show");
+            menuToggle.innerHTML = "☰";
+
+        });
 
     });
 
 }
-
-document.querySelectorAll(".nav-links a").forEach(link=>{
-
-    link.addEventListener("click",()=>{
-
-        navLinks.classList.remove("show");
-
-        menuToggle.innerHTML="☰";
-
-    });
-
-});
-
-

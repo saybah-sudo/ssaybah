@@ -896,3 +896,206 @@ section{
     text-align: center;
   }
 }
+
+.nav-controls {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+.toggle-btn {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  color: inherit;
+  font-size: .75rem;
+  padding: .4rem .9rem;
+  cursor: pointer;
+  letter-spacing: .05em;
+  transition: background var(--transition), transform var(--transition);
+}
+.toggle-btn:hover {
+  background: rgba(255,255,255,.2);
+  transform: translateY(-2px);
+}
+
+
+body.dark{
+  background:#1f140f;
+  color:#f8efe3;
+}
+
+body.dark .navbar{
+  background:rgba(31,20,15,.85);
+  backdrop-filter:blur(12px);
+  mix-blend-mode:normal;
+  color:#f8efe3;
+}
+
+
+body.dark .about{
+  background:#241710;
+}
+
+body.dark .skills{
+  background:#2b1b14;
+}
+
+body.dark .projects{
+  background:#241710;
+}
+
+body.dark .journey{
+  background:#2b1b14;
+}
+
+body.dark .hobbies{
+  background:#241710;
+}
+
+body.dark .contact{
+  background:linear-gradient(160deg,#1b120d,#2e1d15);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark .section-title,
+body.dark .section-num{
+  color:#f8efe3;
+}
+
+body.dark p,
+body.dark span,
+body.dark li,
+body.dark .about-lead,
+body.dark .about-text p,
+body.dark .skills-intro,
+body.dark .project-body p,
+body.dark .timeline-card p{
+  color:#e8d8ca;
+}
+
+
+body.dark .stat-card,
+body.dark .skill-card,
+body.dark .project-card,
+body.dark .timeline-card,
+body.dark .soft-skill-pill,
+body.dark .hobby-front{
+  background:#3a261d;
+  color:#f8efe3;
+  border:1px solid #7a563f;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+body.dark .stat-card:hover,
+body.dark .skill-card:hover,
+body.dark .project-card:hover,
+body.dark .timeline-card:hover,
+body.dark .soft-skill-pill:hover{
+  background:#4a3125;
+}
+
+body.dark .hobby-back{
+  background:linear-gradient(145deg,#5a392b,#3a261d);
+}
+
+
+body.dark .skill-bar{
+  background:#5a4336;
+}
+
+body.dark .skill-bar span{
+  background:linear-gradient(90deg,#b9835c,#e7c9a9);
+}
+
+
+body.dark .project-tags span{
+  background:#55392b;
+  color:#f8efe3;
+  border:1px solid #8d674e;
+}
+
+
+body.dark .btn-primary{
+  background:#d8b078;
+  color:#2b1c14;
+}
+
+body.dark .btn-primary:hover{
+  background:#e7c9a9;
+}
+
+body.dark .btn-ghost{
+  border:1px solid #d8b078;
+  color:#f8efe3;
+}
+
+body.dark .btn-ghost:hover{
+  background:#d8b078;
+  color:#2b1c14;
+}
+
+
+body.dark .footer{
+  color:#ccb7a3;
+}
+
+
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:inherit;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+@media (max-width:760px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-controls{
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .nav-links{
+
+        position:absolute;
+        top:80px;
+        right:20px;
+
+        width:220px;
+
+        background:#2b1c14;
+
+        border-radius:18px;
+
+        display:none;
+
+        flex-direction:column;
+
+        padding:20px;
+
+        box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+        z-index:999;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links a{
+        color:#f8efe3;
+        padding:10px 0;
+    }
+
+}
